@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="styleSheet" href="../style.css">
+</head>
+
+<div>
+    <input type="text" 
+    placeholder="Enter your user name"
+    id="userName_input" />
+    <br>
+    <button onclick="sendUserName()"> Send    </button>
+    <button  onclick="startCall()"> Start call    </button>
+</div> 
+
+<div id="video-call-div">
+ <video muted autoplay id="local-video" > </video> 
+ <video autoplay id="remote-video"> </video>
+
+ <div class="callAction_div">
+    <button onclick="muteAudio()"> mute Audio</button>
+    <button onclick="muteVideo()"> mute video</button>
+</div>
+
+</div>
+
+
+
+<body>
+    <script src="./sender.js"></script>
+</body>
+</html>
